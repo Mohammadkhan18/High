@@ -1,0 +1,30 @@
+{
+  "name": "my-first-worker",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy --minify src/index.ts",
+    "dev": "wrangler dev src/index.ts",
+    "start": "wrangler dev",
+    "test": "vitest",
+    "cf-typegen": "wrangler types"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.5.2",
+    "@cloudflare/workers-types": "^4.20241224.0",
+    "typescript": "^5.5.2",
+    "vitest": "2.1.8",
+    "wrangler": "^3.60.3"
+  },
+  "dependencies": {
+    "@mohammadkhan22/medium-zod-common": "^4.0.0",
+    "@praneethaylalvl1/medium-common": "^4.0.0",
+    "@prisma/client": "^6.1.0",
+    "@prisma/extension-accelerate": "^1.2.1",
+    "@types/moment-timezone": "^0.5.30",
+    "hono": "^4.6.15",
+    "moment-timezone": "^0.5.46",
+    "prisma": "^6.1.0",
+    "zod": "^3.24.1"
+  }
+}
